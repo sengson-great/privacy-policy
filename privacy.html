@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Story App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --content-width: 800px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+
+        /* Subtle background glow */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -10%;
+            right: -10%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -10%;
+            left: -10%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: var(--content-width);
+            width: 100%;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 60px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: var(--accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+        }
+
+        .effective-date {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 48px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            margin: 40px 0 16px;
+            color: var(--text-primary);
+            border-left: 4px solid #6366f1;
+            padding-left: 16px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+            padding-left: 24px;
+        }
+
+        li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        a {
+            color: #818cf8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #c084fc;
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 16px;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.5);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 32px 24px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="effective-date">Effective Date: April 6, 2026</div>
+
+        <p>This Privacy Policy describes how your information is collected, used, and shared when you use the <strong>ប្រលោមចិត្ត</strong> (the "Application").</p>
+
+        <h2>1. Information Collection</h2>
+        <p>We believe in privacy by design. We do not collect any personally identifiable information (PII) such as your name, email address, or phone number. The Application is designed to be used without providing any personal details.</p>
+        
+        <p>The Application may collect certain non-personal information automatically, including:</p>
+        <ul>
+            <li>Device identifiers (IDFA for iOS, AAID for Android)</li>
+            <li>OS version and device model</li>
+            <li>App performance statistics and crash diagnostics</li>
+        </ul>
+
+        <h2>2. Third-Party Services</h2>
+        <p>To support the development of this application, we use third-party services that may collect information used to identify you:</p>
+        
+        <p><strong>Google AdMob</strong><br>
+        We use Google AdMob to display advertisements. AdMob may use device identifiers and other technologies to show personalized ads based on your interests. You can view Google's Privacy Policy <a href="https://policies.google.com/privacy" target="_blank">here</a>.</p>
+
+        <h2>3. Children's Privacy</h2>
+        <p>The Application is intended for general audiences. We do not knowingly collect personal information from children under the age of 13. Safety and privacy are our top priorities.</p>
+
+        <h2>4. Data Security</h2>
+        <p>We value your trust. We use industry-standard means to protect any non-personal data collected. However, no method of transmission over the internet is 100% secure.</p>
+
+        <h2>5. Changes</h2>
+        <p>We may update our Privacy Policy periodically. We will notify you of any changes by posting the new policy on this page and updating the effective date.</p>
+    </div>
+</body>
+</html>
